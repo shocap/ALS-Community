@@ -1,9 +1,5 @@
-// Project:         Advanced Locomotion System V4 on C++
-// Copyright:       Copyright (C) 2021 Doğa Can Yanıkoğlu
-// License:         MIT License (http://www.opensource.org/licenses/mit-license.php)
-// Source Code:     https://github.com/dyanikoglu/ALSV4_CPP
-// Original Author: Haziq Fadhil
-// Contributors:    Doğa Can Yanıkoğlu
+// Copyright:       Copyright (C) 2022 Doğa Can Yanıkoğlu
+// Source Code:     https://github.com/dyanikoglu/ALS-Community
 
 #pragma once
 
@@ -21,7 +17,7 @@ class ALSV4_CPP_API UALSCharacterMovementComponent : public UCharacterMovementCo
 {
 	GENERATED_UCLASS_BODY()
 
-	class FSavedMove_My : public FSavedMove_Character
+	class ALSV4_CPP_API FSavedMove_My : public FSavedMove_Character
 	{
 	public:
 
@@ -38,7 +34,7 @@ class ALSV4_CPP_API UALSCharacterMovementComponent : public UCharacterMovementCo
 		EALSGait SavedAllowedGait = EALSGait::Walking;
 	};
 
-	class FNetworkPredictionData_Client_My : public FNetworkPredictionData_Client_Character
+	class ALSV4_CPP_API FNetworkPredictionData_Client_My : public FNetworkPredictionData_Client_Character
 	{
 	public:
 		FNetworkPredictionData_Client_My(const UCharacterMovementComponent& ClientMovement);
